@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+
+ 
+<frogans-fsdl version='3.0'>
+
+<!-- l'image de fond d'ecran -->
+
+	<file fileid='fond_ecran' nature='static' name='/images/urgence.png' />
+	<resimage fileref='fond_ecran' resid='fe_id' size='640,480' />
+	<layer resref='fe_id' layerid='fe_layer' leapout='all' pos='0,0' align='left-top' combine='add' />
+	
+<!--Fichiers Slides -->
+
+	<file fileid='accueil_id' nature='static' name='/accueil.fsdl' />
+	
+<!-- Boutons -->
+
+	<button buttonid='b01' goto='slide' fileref='accueil_id' >
+		<layer resref='fe_id' layerid='fe_o_l' leapout='all' pos='0,0' align='left-top' combine='add' visible='nofocus' />
+		<layer resref='fe_id' layerid='fe_u_l' leapout='all' pos='0,0' align='left-top' combine='add' visible='focus' />
+	</button>
+	
+</frogans-fsdl>

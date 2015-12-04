@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+
+ 
+<frogans-fsdl version='3.0'>
+
+<!-- Le font -->
+
+	<setfont fontid='textFont'>
+		<font scripts='default' pfont='108-1-sans-r' height='12' color='#000000' />
+	</setfont>
+
+
+<!-- l'image de fond d'ecran -->
+
+	<file fileid='fond_ecran' nature='static' name='/images/telephone.png' />
+	<resimage fileref='fond_ecran' resid='fe_id' size='640,480' />
+	<layer resref='fe_id' layerid='fe_layer' leapout='all' pos='0,0' align='left-top' combine='add' />
+	
+<!-- Relief des boutons -->
+
+	<setrelief reliefid='bouton_relief'>
+		<relief rpos='0,0' color='#ffffff' blur='2' opacity='50'/>
+	</setrelief >
+	
+<!-- Shadow -->
+
+	<setshadow shadowid='bouton_shadow'>
+		<shadow rpos='0,0' color='#ffffff' blur='10' opacity='100' combine='clip'/>
+	</setshadow >
+
+<!--Fichiers Slides -->
+
+	<file fileid='num1_s' nature='static' name='/num1.fsdl' />
+	<file fileid='num2_s' nature='static' name='/num2.fsdl' />
+	<file fileid='num3_s' nature='static' name='/num3.fsdl' />
+	<file fileid='num4_s' nature='static' name='/num4.fsdl' />
+	<file fileid='num5_s' nature='static' name='/num5.fsdl' />
+	<file fileid='num6_s' nature='static' name='/num6.fsdl' />
+	<file fileid='num7_s' nature='static' name='/num7.fsdl' />
+	<file fileid='num8_s' nature='static' name='/num8.fsdl' />
+	<file fileid='num9_s' nature='static' name='/num9.fsdl' />
+	<file fileid='num0_s' nature='static' name='/num0.fsdl' />
+	
+<!-- Texte -->
+	<restext resid='titre_id' size='600,60' orientation='h-ttb-ltr' fontref='textFont' talign='center'>
+		<text fontref='textFont'>Tabac info service</text>
+	</restext>
+	<restext resid='texte_id' size='600,60' orientation='h-ttb-ltr' fontref='textFont' talign='center'>
+		<text fontref='textFont'>numero : 39 89 </text>
+	</restext>
+<!-- Texte Layer -->
+	<layer resref='titre_id' layerid='titre_id_l' leapout='lead' pos='340,320' align='center-middle' combine='clip' opacity='100' />
+	<layer resref='texte_id' layerid='texte_id_l' leapout='lead' pos='320,400' align='center-middle' combine='clip' opacity='100' />
+<!-- Decoupage de tous les numéros -->
+
+	<resimage resid='num1_nf' fileref='fond_ecran' size='32,32' selection='extract' bounds='367,108,399,140' />
+	<resimage resid='num1_f' fileref='fond_ecran' size='40,40' selection='extract' bounds='367,108,399,140' />
+	<layer resref='num1_nf' reliefref='bouton_relief' layerid='num1_id_l' leapout='all' pos='367,108' align='left-top' combine='add' />
+	
+	
+	<resimage resid='num2_nf' fileref='fond_ecran' size='32,32' selection='extract' bounds='331,96,364,129' />
+	<resimage resid='num2_f' fileref='fond_ecran' size='40,40' selection='extract' bounds='331,96,364,129' />
+	<layer resref='num2_nf' reliefref='bouton_relief' layerid='num2_id_l' leapout='all' pos='331,96' align='left-top' combine='add' />
+	
+	
+	<resimage resid='num3_nf' fileref='fond_ecran' size='32,32' selection='extract' bounds='293,95,325,128' />
+	<resimage resid='num3_f' fileref='fond_ecran' size='40,40' selection='extract' bounds='293,95,325,128' />
+	<layer resref='num3_nf' reliefref='bouton_relief' layerid='num3_id_l' leapout='all' pos='293,95' align='left-top' combine='add' />
+	
+	
+	<resimage resid='num4_nf' fileref='fond_ecran' size='32,32' selection='extract' bounds='260,114,292,147' />
+	<resimage resid='num4_f' fileref='fond_ecran' size='40,40' selection='extract' bounds='260,114,292,147' />
+	<layer resref='num4_nf' reliefref='bouton_relief' layerid='num4_id_l' leapout='all' pos='260,114' align='left-top' combine='add' />
+	
+	<resimage resid='num5_nf' fileref='fond_ecran' size='32,32' selection='extract' bounds='238,143,270,176' />
+	<resimage resid='num5_f' fileref='fond_ecran' size='40,40' selection='extract' bounds='238,143,270,176' />
+	<layer resref='num5_nf' reliefref='bouton_relief' layerid='num5_id_l' leapout='all' pos='238,143' align='left-top' combine='add' />
+	
+	<resimage resid='num6_nf' fileref='fond_ecran' size='32,32' selection='extract' bounds='235,176,268,209' />
+	<resimage resid='num6_f' fileref='fond_ecran' size='40,40' selection='extract' bounds='235,176,268,209' />
+	<layer resref='num6_nf' reliefref='bouton_relief' layerid='num6_id_l' leapout='all' pos='235,176' align='left-top' combine='add' />
+	
+	<resimage resid='num7_nf' fileref='fond_ecran' size='37,37' selection='extract' bounds='254,205,292,242' />
+	<resimage resid='num7_f' fileref='fond_ecran' size='42,42' selection='extract' bounds='254,205,292,242' />
+	<layer resref='num7_nf' reliefref='bouton_relief' layerid='num7_id_l' leapout='all' pos='254,205' align='left-top' combine='add' />
+	
+	<resimage resid='num8_nf' fileref='fond_ecran' size='37,37' selection='extract' bounds='294,222,332,259' />
+	<resimage resid='num8_f' fileref='fond_ecran' size='42,42' selection='extract' bounds='294,222,332,259' />
+	<layer resref='num8_nf' reliefref='bouton_relief' layerid='num8_id_l' leapout='all' pos='294,222' align='left-top' combine='add' />
+	
+	<resimage resid='num9_nf' fileref='fond_ecran' size='37,37' selection='extract' bounds='339,219,376,256' />
+	<resimage resid='num9_f' fileref='fond_ecran' size='42,42' selection='extract' bounds='339,219,376,256' />
+	<layer resref='num9_nf' reliefref='bouton_relief' layerid='num9_id_l' leapout='all' pos='339,219' align='left-top' combine='add' />
+	
+	<resimage resid='num0_nf' fileref='fond_ecran' size='37,37' selection='extract' bounds='377,204,415,244' />
+	<resimage resid='num0_f' fileref='fond_ecran' size='42,42' selection='extract' bounds='377,204,415,244' />
+	<layer resref='num0_nf' reliefref='bouton_relief' layerid='num0_id_l' leapout='all' pos='377,202' align='left-top' combine='add' />
+	
+<!-- Boutons -->
+
+	<button buttonid='b01' goto='slide' fileref='num1_s' >
+		<layer resref='num1_f' layerid='num1_u_l' leapout='all' pos='367,108' align='left-top' combine='add' reliefref='bouton_relief' visible='focus' />
+		<layer resref='num1_nf' layerid='num1_o_l' leapout='all' pos='367,108' align='left-top' combine='add' shadowref='bouton_shadow' visible='nofocus' />
+	</button>
+	
+	<button buttonid='b02' goto='slide' fileref='num2_s' >
+		<layer resref='num2_f' layerid='num2_u_l' leapout='all' pos='331,96' align='left-top' combine='add' reliefref='bouton_relief' visible='focus' />
+		<layer resref='num2_nf' layerid='num2_o_l' leapout='all' pos='331,96' align='left-top' combine='add' shadowref='bouton_shadow' visible='nofocus' />
+	</button>
+	
+	<button buttonid='b03' goto='slide' fileref='num3_s' >
+		<layer resref='num3_f' layerid='num3_u_l' leapout='all' pos='293,95' align='left-top' combine='add' reliefref='bouton_relief' visible='focus' />
+		<layer resref='num3_nf' layerid='num3_o_l' leapout='all' pos='293,95' align='left-top' combine='add' shadowref='bouton_shadow' visible='nofocus' />
+	</button>
+	
+	<button buttonid='b04' goto='slide' fileref='num4_s' >
+		<layer resref='num4_f' layerid='num4_u_l' leapout='all' pos='260,114' align='left-top' combine='add' reliefref='bouton_relief' visible='focus' />
+		<layer resref='num4_nf' layerid='num4_o_l' leapout='all' pos='260,114' align='left-top' combine='add' shadowref='bouton_shadow' visible='nofocus' />
+	</button>
+	
+	<button buttonid='b05' goto='slide' fileref='num5_s' >
+		<layer resref='num5_f' layerid='num5_u_l' leapout='all' pos='238,143' align='left-top' combine='add' reliefref='bouton_relief' visible='focus' />
+		<layer resref='num5_nf' layerid='num5_o_l' leapout='all' pos='238,143' align='left-top' combine='add' shadowref='bouton_shadow' visible='nofocus' />
+	</button>
+	
+	<button buttonid='b06' goto='slide' fileref='num6_s' >
+		<layer resref='num6_f' layerid='num6_u_l' leapout='all' pos='235,176' align='left-top' combine='add' reliefref='bouton_relief' visible='focus' />
+		<layer resref='num6_nf' layerid='num6_o_l' leapout='all' pos='235,176' align='left-top' combine='add' shadowref='bouton_shadow' visible='nofocus' />
+	</button>
+	
+	<button buttonid='b07' goto='slide' fileref='num7_s' >
+		<layer resref='num7_f' layerid='num7_u_l' leapout='all' pos='254,205' align='left-top' combine='add' reliefref='bouton_relief' visible='focus' />
+		<layer resref='num7_nf' layerid='num7_o_l' leapout='all' pos='254,205' align='left-top' combine='add' shadowref='bouton_shadow' visible='nofocus' />
+	</button>
+	
+	<button buttonid='b08' goto='slide' fileref='num8_s' >
+		<layer resref='num8_f' layerid='num8_u_l' leapout='all' pos='294,222' align='left-top' combine='add' reliefref='bouton_relief' visible='focus' />
+		<layer resref='num8_nf' layerid='num8_o_l' leapout='all' pos='294,222' align='left-top' combine='add' shadowref='bouton_shadow' visible='nofocus' />
+	</button>
+	
+	<button buttonid='b09' goto='slide' fileref='num9_s' >
+		<layer resref='num9_f' layerid='num9_u_l' leapout='all' pos='339,219' align='left-top' combine='add' reliefref='bouton_relief' visible='focus' />
+		<layer resref='num9_nf' layerid='num9_o_l' leapout='all' pos='339,219' align='left-top' combine='add' shadowref='bouton_shadow' visible='nofocus' />
+	</button>
+	
+	<button buttonid='b00' goto='slide' fileref='num0_s' >
+		<layer resref='num0_f' layerid='num0_u_l' leapout='all' pos='377,202' align='left-top' combine='add' reliefref='bouton_relief' visible='focus' />
+		<layer resref='num0_nf' layerid='num0_o_l' leapout='all' pos='377,202' align='left-top' combine='add' shadowref='bouton_shadow' visible='nofocus' />
+	</button>
+	
+	
+</frogans-fsdl>
